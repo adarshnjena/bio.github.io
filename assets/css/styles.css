@@ -5,6 +5,8 @@
 :root {
   --header-height: 3rem;
   --font-semi: 600;
+  --circle : rgb(221, 28, 26, 0.3);
+  --circle2 : rgb(253, 255, 182, 0.7);
 }
 
 /*===== Colores =====*/
@@ -63,6 +65,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  overflow-x: hidden;
 }
 
 h1,
@@ -216,7 +219,32 @@ img {
 #home {
   height: 75vh;
   row-gap: 1rem;
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
 }
+
+ .circle {
+   width: 500px;
+   height: 500px;
+   background: var(--circle);
+   position: absolute;
+   top: 50%;
+   left: -97%;
+   border-radius: 50%;
+   z-index: -1;
+ }
+
+ .circle2 {
+   width: 500px;
+   height: 500px;
+   background: var(--circle2);
+   position: absolute;
+   bottom: 20%;
+   right: -99%;
+   border-radius: 50%;
+   z-index: -1;
+ }
 
 .home__data {
   align-self: center;
@@ -483,6 +511,30 @@ img {
   #home {
     margin-top: 5vh;
     height: 80vh;
+    position: relative;
+    overflow-x:visible;
+  }
+
+  .circle {
+    width: 500px;
+    height: 500px;
+    background: var(--circle);
+    position: absolute;
+    top: 40%;
+    left:-15%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .circle2 {
+    width: 500px;
+    height: 500px;
+    background: var(--circle2);
+    position: absolute;
+    bottom: 20%;
+    right: -55%;
+    border-radius: 50%;
+    z-index: -1;
   }
 
   .home__title{
