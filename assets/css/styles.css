@@ -89,7 +89,6 @@ img {
   height: auto;
   display: block;
 }
-
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
@@ -218,9 +217,9 @@ img {
 
 /*===== HOME =====*/
 #home {
-  height: 95vh;
   row-gap: 1rem;
   position: relative;
+  width: 100vw;
 }
 
  .circle {
@@ -229,11 +228,10 @@ img {
    background: var(--circle);
    position: absolute;
    top: 50%;
-   left: -95%;
+   left: -75%;
    border-radius: 50%;
    z-index: -1;
  }
-
 
 .home__data {
   align-self: center;
@@ -249,6 +247,7 @@ img {
 .home__title {
   font-size: var(--big-font-size);
   margin-bottom: var(--mb-5);
+  margin-right: 10px;
 }
 
 .home__title-color {
@@ -503,7 +502,6 @@ img {
     margin-top: 5vh;
     height: 80vh;
     position: relative;
-    /* overflow-x:visible; */
   }
 
   .circle {
@@ -523,7 +521,7 @@ img {
     background: var(--circle2);
     position: absolute;
     bottom: 20%;
-    right: -15%;
+    right: -60%;
     border-radius: 50%;
     z-index: -1;
   }
@@ -585,12 +583,6 @@ img {
     margin-right: auto;
   }
 
-  #home {
-      margin-top: 5vh;
-      height: 80vh;
-      position: relative;
-      overflow-x: visible;
-  }
 
   .home__img {
     right: 10%;
