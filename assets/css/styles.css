@@ -253,6 +253,8 @@ img {
 .home__txt {
   font-size: 2.5vh;
   text-align: justify;
+  margin-right :20px;
+  margin-left: 20px;
 }
 
 .home__title {
