@@ -159,15 +159,6 @@ img {
 
 .nav__item {
   margin-bottom: var(--mb-4);
-  position: relative;
-}
-
-.nav__item i {
-  color: #204fe7;
-  font-size: 17px;
-  font-weight: 800;
-  position: relative;
-  top: 10%;
 }
 
 .nav__link {
@@ -467,7 +458,13 @@ img {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   }
-
+.nav__item i {
+  color: #204fe7;
+  font-size: 17px;
+  font-weight: 800;
+  position: relative;
+  top: 10%;
+}
   .nav__toggle {
     display: none;
   }
