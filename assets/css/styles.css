@@ -220,6 +220,7 @@ img {
   row-gap: 1rem;
   position: relative;
   width: 100vw;
+  margin: auto;
 }
 
  .circle {
@@ -502,6 +503,7 @@ img {
     margin-top: 5vh;
     height: 80vh;
     position: relative;
+      margin: auto;
   }
 
   .circle {
@@ -581,6 +583,10 @@ img {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #home{
+      margin: auto;
   }
 
 
