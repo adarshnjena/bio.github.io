@@ -217,7 +217,7 @@ img {
 
 /*===== HOME =====*/
 #home {
-  height: 75vh;
+  height: 95vh;
   row-gap: 1rem;
   position: relative;
   overflow-x: hidden;
@@ -230,7 +230,7 @@ img {
    background: var(--circle);
    position: absolute;
    top: 50%;
-   left: -97%;
+   left: -95%;
    border-radius: 50%;
    z-index: -1;
  }
@@ -241,7 +241,7 @@ img {
    background: var(--circle2);
    position: absolute;
    bottom: 20%;
-   right: -99%;
+   right: -95%;
    border-radius: 50%;
    z-index: -1;
  }
