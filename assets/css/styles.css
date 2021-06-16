@@ -169,8 +169,7 @@ img {
 .nav__link:hover {
   position: relative;
 }
-
-.nav__link:hover::after {
+.nav__link::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -178,6 +177,12 @@ img {
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
+  transition: all 200ms;
+  transform: scaleX(0);
+}
+
+.nav__link:hover::after {
+  transform: scaleX(1);
 }
 
 .nav__logo {
@@ -199,6 +204,7 @@ img {
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
+  transform: scaleX(1);
 }
 
 /*=== Show menu ===*/
@@ -208,7 +214,7 @@ img {
 
 /*===== HOME =====*/
 #home {
-  height: 90vh;
+  height: 100vh;
   row-gap: 1rem;
 }
 
@@ -217,7 +223,7 @@ img {
 }
 
 .home__txt {
-  font-size: 2.6vh;
+  font-size: 2.5vh;
   text-align: justify;
 }
 
@@ -260,6 +266,7 @@ img {
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
+  position: relative;
 }
 
 .button:hover {
@@ -458,13 +465,13 @@ img {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   }
-.nav__item i {
+ .nav__item i {
   color: #204fe7;
   font-size: 17px;
   font-weight: 800;
   position: relative;
   top: 10%;
-}
+ }
   .nav__toggle {
     display: none;
   }
@@ -473,12 +480,22 @@ img {
     color: var(--second-color);
   }
 
-  .home {
-    height: 100vh;
+  #home {
+    margin-top: 5vh;
+    height: 80vh;
+  }
+
+  .home__title{
+    font-size: 8vh;
   }
 
   .home__data {
     align-self: flex-end;
+  }
+
+  .home__txt {
+    font-size: 3vh;
+    text-align: justify;
   }
 
   .home__social {
