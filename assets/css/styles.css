@@ -115,6 +115,7 @@ img {
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
+  overflow: hidden;
 }
 
 /*===== LAYOUT =====*/
@@ -233,16 +234,6 @@ img {
    z-index: -1;
  }
 
- .circle2 {
-   width: 500px;
-   height: 500px;
-   background: var(--circle2);
-   position: absolute;
-   bottom: 20%;
-   right: -95%;
-   border-radius: 50%;
-   z-index: -1;
- }
 
 .home__data {
   align-self: center;
