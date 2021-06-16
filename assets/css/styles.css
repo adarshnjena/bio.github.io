@@ -220,8 +220,6 @@ img {
   height: 95vh;
   row-gap: 1rem;
   position: relative;
-  overflow-x: hidden;
-  width: 100vw;
 }
 
  .circle {
@@ -514,7 +512,7 @@ img {
     margin-top: 5vh;
     height: 80vh;
     position: relative;
-    overflow-x:visible;
+    /* overflow-x:visible; */
   }
 
   .circle {
@@ -534,7 +532,7 @@ img {
     background: var(--circle2);
     position: absolute;
     bottom: 20%;
-    right: -55%;
+    right: -15%;
     border-radius: 50%;
     z-index: -1;
   }
@@ -594,6 +592,13 @@ img {
   .bd-grid {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #home {
+      margin-top: 5vh;
+      height: 80vh;
+      position: relative;
+      overflow-x: visible;
   }
 
   .home__img {
