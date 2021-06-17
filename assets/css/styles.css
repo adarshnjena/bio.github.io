@@ -318,7 +318,7 @@ img {
 }
 
 .about__text{
-  font-size: 24px;
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -663,6 +663,10 @@ img {
       margin: auto;
   }
 
+  .about__text {
+    font-size: 24px;
+    text-align: justify;
+  }
 
   .home__img {
     right: 10%;
