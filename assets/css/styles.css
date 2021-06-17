@@ -445,9 +445,12 @@ img {
   height: 100%;
   transform: rotateX(-150deg);
   transform-origin: top;
-
   padding: 20px;
   transition: transform 300ms;
+}
+.work__img p a{
+  color: coral;
+  text-decoration: underline;
 }
 
 .work__img:hover p{
