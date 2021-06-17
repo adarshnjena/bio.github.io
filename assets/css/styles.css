@@ -241,7 +241,7 @@ img {
      background: var(--circle2);
      position: absolute;
      bottom: 20%;
-     right: -60%;
+     right: -75%;
      border-radius: 50%;
      z-index: -1;
    }
@@ -251,12 +251,13 @@ img {
   align-self: center;
   margin-right :20px;
   margin-left: 20px;
-  margin-top: 5px;
+  margin-top: 50px;
 }
 
 .home__txt {
   font-size: 2.5vh;
   text-align: justify;
+  max-width:95%;
 }
 
 .home__title {
@@ -465,10 +466,63 @@ img {
   margin: 0 var(--mb-2)
 }
 
+    @media screen and (max-width: 400px) {
+
+    
+  .circle {
+    width: 400px;
+    height: 400px;
+    background: var(--circle);
+    position: absolute;
+    top: 50%;
+    left: -70%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .circle2 {
+    width: 400px;
+    height: 400px;
+    background: var(--circle2);
+    position: absolute;
+    bottom: 50%;
+    right: -70%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  }
+
+  @media screen and (min-width: 500px) {
+
+    
+  .circle {
+    width: 500px;
+    height: 500px;
+    background: var(--circle);
+    position: absolute;
+    top: 50%;
+    left: -40%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .circle2 {
+    width: 500px;
+    height: 500px;
+    background: var(--circle2);
+    position: absolute;
+    bottom: 20%;
+    right: -50%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  }
+
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
+    overflow-x: hidden;
   }
 
   .section {
@@ -517,7 +571,8 @@ img {
     margin-top: 5vh;
     height: 80vh;
     position: relative;
-      margin: auto;
+    margin: auto;
+    overflow-x: visible;
   }
 
   .circle {
@@ -536,8 +591,8 @@ img {
     height: 500px;
     background: var(--circle2);
     position: absolute;
-    bottom: 20%;
-    right: -60%;
+    bottom: 30%;
+    right: -40%;
     border-radius: 50%;
     z-index: -1;
   }
