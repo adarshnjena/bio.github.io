@@ -450,7 +450,6 @@ img {
   transform: rotateX(0deg);
 }
 .work__img img {
-  transition: 350ms;
   cursor: pointer;
 }
 
