@@ -267,13 +267,20 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid">
-                <form action="" class="contact__form">
-                    <input type="text" placeholder="Name" class="contact__input">
-                    <input type="mail" placeholder="Email" class="contact__input">
+                <form method="POST" action="https://formsubmit.co/c86ba43a84a4fad85d229538ac1b9c08"
+                    class="contact__form">
+                    <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                    <input type="email" name="email" class="contact__input" placeholder="Email" required>
                     <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                    <input type="button" value="Submit" class="contact__button button">
-                    <div class="dot"></div></input>
+                    <button type="submit" class="contact__button button">Send</button>
+                    <input type="hidden" name="_next" value="https://adarshnjena.github.io/bio.github.io/">
+                    <!-- <div class="dot"></div> -->
                 </form>
+                <!-- <form action="https://formsubmit.co/your@email.com" method="POST">
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <button type="submit" class="contact__button button">Send</button>
+                </form> -->
             </div>
         </section>
     </main>
