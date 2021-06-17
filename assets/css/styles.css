@@ -216,6 +216,10 @@ img {
 }
 
 /*===== HOME =====*/
+.l-main {
+  transition: all 1000ms;
+}
+
 #home {
   row-gap: 1rem;
   position: relative;

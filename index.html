@@ -248,12 +248,23 @@
         <!--Page Loader-->
         <script>
             var Loader = document.querySelector('.loader');
+            var page = document.querySelector('.l-main');
             
-            function load(){
-                Loader.style.display="none";
-            }
+            page.style.opacity="0";
 
-            window.addEventListener("load",load());
+            // function load(){
+            //     Loader.style.display="none";
+                
+            // }
+            
+            setInterval(()=>{
+                Loader.style.display="none";
+                page.style.opacity="1";
+            },1000);
+
+            // page.addEventListener('onload',setInterval(()=>{
+            //     Loader.style.display="none";
+            // },1500))
         </script>
     </body>
 </html>
