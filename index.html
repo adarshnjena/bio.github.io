@@ -3,15 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="3D BOX.css">
         <link rel="icon" href="assets/img/title.png" type="image/x-icon">
         <link rel="stylesheet" href="assets/css/styles.css">
-
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Portfolio website complete</title>
     </head>
     <body>
+
+    <!--=====PreLoader====-->
+        <div class="loader">
+        <div class="boxes">
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <span>Loading....</span>
+        </div>
+
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -209,10 +241,19 @@
             <p>&#169; 2020 copyright all right reserved</p>
         </footer>
 
-
+        
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <!--Page Loader-->
+        <script>
+            var Loader = document.querySelector('.loader');
 
+            function load(){
+                Loader.style.display="none";
+            }
+
+            window.addEventListener("load",load());
+        </script>
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
     </body>
