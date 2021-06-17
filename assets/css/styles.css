@@ -221,6 +221,7 @@ img {
   position: relative;
   width: 100vw;
   margin: auto;
+  overflow-x: hidden;
 }
 
  .circle {
@@ -234,15 +235,28 @@ img {
    z-index: -1;
  }
 
+   .circle2 {
+     width: 500px;
+     height: 500px;
+     background: var(--circle2);
+     position: absolute;
+     bottom: 20%;
+     right: -60%;
+     border-radius: 50%;
+     z-index: -1;
+   }
+
+
 .home__data {
   align-self: center;
+  margin-right :20px;
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 .home__txt {
   font-size: 2.5vh;
   text-align: justify;
-  margin-right :20px;
-  margin-left: 20px;
 }
 
 .home__title {
