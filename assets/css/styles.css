@@ -317,6 +317,11 @@ img {
   margin-bottom: var(--mb-2);
 }
 
+.about__text{
+  font-size: 24px;
+  text-align: justify;
+}
+
 .about__img {
   justify-self: center;
 }
