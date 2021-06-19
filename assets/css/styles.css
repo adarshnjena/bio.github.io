@@ -330,6 +330,7 @@ img {
 .about__text{
   font-size: 18px;
   text-align: justify;
+  padding:0 2vw;
 }
 
 .about__img {
@@ -692,7 +693,10 @@ img {
   .about__img img {
     width: 300px;
   }
-
+  .about__text {
+    padding: 0;
+    padding-right: 3vw;
+  }
   .work__img p {
     font-size: 1.4vw;
     padding: 3vw;
@@ -710,9 +714,9 @@ img {
   .skills__img::before {
     position: absolute;
     content: "";
-    width: 350px;
-    height: 350px;
-    left: 90px;
+    width: 33vw;
+    height: 33vw;
+    left: 6.8vw;
     top: -20px;
     background-color: rgb(131, 212, 240);
     z-index: -1;
@@ -740,13 +744,22 @@ img {
       margin: auto;
   }
 
+  .home__img {
+    right: 10%;
+  }
+  
+
   .about__text {
     font-size: 24px;
     text-align: justify;
+    padding-left:0.5vw;
   }
-
-  .home__img {
-    right: 10%;
+  
+  .skills__img::before {
+    width: 350px;
+    height: 350px;
+    left: 90px;
+    top: -20px;
   }
 
   .work__img p {
