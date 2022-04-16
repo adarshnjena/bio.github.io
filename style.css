@@ -416,7 +416,12 @@ section .title::after{
 .skills-content .right .java::before{
     width: 50%;
 }
-
+.skills-content .right .three::before{
+    width: 40%;
+}
+.skills-content .right .firebase::before{
+    width: 80%;
+}
 /* teams section styling */
 .teams .title::after{
     content: "More Projects";
