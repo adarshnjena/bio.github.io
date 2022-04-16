@@ -11,7 +11,7 @@ html{
     scroll-behavior: smooth;
 }
 :root {
-    --first-color: gold;
+    --first-color: #ffc000;
     --second-color: white;
   }
 
@@ -528,7 +528,7 @@ section .title::after{
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title{
-    color: #333;
+    color: #707070;
 }
 .contact .right form .fields{
     display: flex;

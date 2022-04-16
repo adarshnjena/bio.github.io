@@ -61,12 +61,12 @@
     --left: 0;
 }
 .boxes .box > div:nth-child(2) {
-    --background: #f2e314;
+    --background: #ffc000;
     --right: 0;
     --rotateY: 90deg;
 }
 .boxes .box > div:nth-child(3) {
-    --background: #f5e944;
+    --background: #f2e314;
     --rotateX: -90deg;
 }
 .boxes .box > div:nth-child(4) {
@@ -183,7 +183,7 @@ html {
     position: fixed;
     bottom:10%;
     font-size: 18px;
-    color: rgb(237, 228, 100);
+    color: #ffc000;
 }
 .l-main {
     transition:all 500ms;
