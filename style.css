@@ -93,6 +93,15 @@ section .title::after{
     color: #000;
 }
 
+.skills .title {
+    color: black;
+}
+.skills  .title::before{
+    background: #000;
+}
+.skills-content{
+    color: #000;
+}
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -240,6 +249,116 @@ section .title::after{
     background: none;
 }
 
+/* experience section styling */
+.experience{
+    padding:0;
+    background-color: #000;
+}
+
+.experiences{
+    padding:0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.experience .title{
+    padding-top: 10vh;
+}
+
+.experience .title::after{
+    content: "Internship & Freelance";
+}
+.experience .title::before{
+    width: 300px;
+}
+
+.experiences::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -71vh;
+    transform: rotate(45deg);
+    width: 100vh;
+    height: 100vh;
+    background: var(--first-color);
+}
+.experiences::after{
+    content: "01";
+    font-size: 35vh;
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 47vh;
+    right:-25vh;
+    width: 100vh;
+    height: 100vh;
+}
+.experiences:nth-child(odd)::before{
+    left: -71vh;
+}
+.experiences:nth-child(odd)::after{
+    left: -68vh;
+    top: -5vh;
+    content: "02";
+    text-align: end;
+
+}
+
+.experiences .experiences-content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100vw - 90vh);
+    margin: 0 0 0 20vh;
+    height: 90vh;
+    z-index: 2;
+}
+.experiences .experiences-content-right{
+    align-items: flex-end;
+    margin: 0 0 0 70vh;
+}   
+
+.experiences .experiences-content .text{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.experiences .experiences-content p{
+    text-align: justify;
+    margin: 40px 0;
+}
+
+.experiences .experiences-content li{
+    padding: 10px 0;
+}
+.experiences .experiences-content a{
+    display: inline-block;
+    background: var(--first-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--first-color);
+    transition: all 0.3s ease;
+}
+.experiences .experiences-content a:hover{
+    color: var(--first-color);
+    background: none;
+}
+
+
+
+
 /* about section styling */
 .about{
     background-color: var(--second-color);
@@ -337,9 +456,14 @@ section .title::after{
 }
 
 /* skills section styling */
+.skills{
+    background-color: var(--second-color);
+    color: #000;
+}
 
 .skills .title::after{
     content: "what i know";
+    background-color: var(--second-color);
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
