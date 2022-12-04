@@ -852,7 +852,7 @@ footer span a:hover{
 }   
     
 }
-@media (max-width: 947px){
+@media (max-width: 950px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -1041,5 +1041,11 @@ footer span a:hover{
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar .logo a{
+        font-size: 25px;
     }
 }
