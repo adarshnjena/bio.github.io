@@ -1,5 +1,6 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://allfont.net/allfont.css?fonts=franklin-gothic-medium');
 
 *{
     margin: 0;
@@ -289,13 +290,13 @@ section .title::after{
 }
 .experiences::after{
     content: "01";
-    font-size: 35vh;
+    font-size: 30vh;
     color: #fff;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', arial;
     position: absolute;
     transform: rotate(45deg);
-    top: 47vh;
-    right:-25vh;
+    top: 50vh;
+    right:-22vh;
     width: 100vh;
     height: 100vh;
 }
@@ -540,7 +541,7 @@ section .title::after{
 }
 /* works section styling */
 .works .title::after{
-    content: "More Projects";
+    content: "Home Work";
 }
 .works .carousel .card{
     background: #222;
@@ -769,30 +770,30 @@ footer span a:hover{
     height: 60vh;
 }
 .experiences::after{
-    font-size: 25vh;
+    font-size: 20vh;
     transform: rotate(45deg);
-    top: 26vh;
-    right:-17vh;
+    top: 28vh;
+    right:-15vh;
     width: 60vh;
     height: 60vh;
 }
 .experiences:nth-child(odd)::before{
-    left: -42vh;
+    left: -45vh;
 }
 .experiences:nth-child(odd)::after{
-    left: -39vh;
+    left: -44vh;
     top: -3vh;
 
 }
 
 .experiences .experiences-content{
-    width: calc(100vw - 45vh);
+    width: calc(100vw - 42vh);
     margin: 0 0 0 8vw;
     height: calc(max-content + 100px);
 }
 .experiences .experiences-content-right{
     align-items: flex-end;
-    margin: 0 0 0 40vh;
+    margin: 0 0 0 33vh;
 }   
 
 .experiences .experiences-content .text{
@@ -825,18 +826,18 @@ footer span a:hover{
     height: 40vh;
 }
 .experiences::after{
-    font-size: 17vh;
+    font-size: 15vh;
     transform: rotate(45deg);
-    top: 17vh;
-    right:-11vh;
+    top: 18vh;
+    right:-10vh;
     width: 40vh;
     height: 40vh;
 }
 .experiences:nth-child(odd)::before{
-    left: -28vh;
+    left: -30vh;
 }
 .experiences:nth-child(odd)::after{
-    left: -26vh;
+    left: -28vh;
     top: -2vh;
 
 }
@@ -946,7 +947,7 @@ footer span a:hover{
     .experiences{
         overflow: visible;
         height: max-content;
-        margin: 100px 0;
+        margin: 70px 0;
     }
     .experience .title::after{
         font-size: 15px;
@@ -964,9 +965,9 @@ footer span a:hover{
         height: 250px;
     }
     .experiences::after{
-        font-size: 150px;
+        font-size: 120px;
         transform: rotate(0deg);
-        top: -90px;
+        top: -60px;
         left:15px;
         width: 250px;
         height: 250px;
@@ -979,9 +980,9 @@ footer span a:hover{
     }
     .experiences:nth-child(odd)::after{
         
-        font-size: 150px;
-        top: -90px;
-        left: -60px;
+        font-size: 120px;
+        top: -60px;
+        left: -96px;
         text-align: end;
         width: 250px;
         height: 25ppx;
