@@ -93,6 +93,15 @@ section .title::after{
     color: #000;
 }
 
+.skills .title {
+    color: black;
+}
+.skills  .title::before{
+    background: #000;
+}
+.skills-content{
+    color: #000;
+}
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -240,6 +249,104 @@ section .title::after{
     background: none;
 }
 
+/* experience section styling */
+.experience{
+    padding:0;
+    background-color: #000;
+}
+
+.experiences{
+    padding:0;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.experience .title{
+    padding-top: 10vh;
+}
+
+.experience .title::after{
+    content: "Internship & Freelance";
+}
+.experience .title::before{
+    width: 300px;
+}
+
+.experiences::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -71vh;
+    transform: rotate(45deg);
+    width: 100vh;
+    height: 100vh;
+    background: var(--first-color);
+}
+.experiences::after{
+    content: "01";
+    font-size: 35vh;
+    color: #fff;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 47vh;
+    right:-25vh;
+    width: 100vh;
+    height: 100vh;
+}
+.experiences:nth-child(odd)::before{
+    left: -71vh;
+}
+.experiences:nth-child(odd)::after{
+    left: -68vh;
+    top: -5vh;
+    content: "02";
+    text-align: end;
+
+}
+
+.experiences .experiences-content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100vw - 90vh);
+    margin: 0 0 0 20vh;
+    height: 90vh;
+    z-index: 2;
+}
+.experiences .experiences-content-right{
+    align-items: flex-end;
+    margin: 0 0 0 70vh;
+}   
+
+.experiences .experiences-content .text{
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.experiences .experiences-content p{
+    text-align: justify;    
+    font-family: 'Poppins', sans-serif;
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.experiences .experiences-content li{
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+
+
 /* about section styling */
 .about{
     background-color: var(--second-color);
@@ -337,9 +444,14 @@ section .title::after{
 }
 
 /* skills section styling */
+.skills{
+    background-color: var(--second-color);
+    color: #000;
+}
 
 .skills .title::after{
     content: "what i know";
+    background-color: var(--second-color);
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -616,17 +728,129 @@ footer span a:hover{
 
 
 /* responsive media query start */
+@media (max-width: 1275px) {
+    
+.experiences .experiences-content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100vw - 70vh);
+    margin: 0 0 0 10vh;
+    height: 90vh;
+    z-index: 2;
+}
+.experiences .experiences-content-right{
+    align-items: flex-end;
+    margin: 0 0 0 60vh;
+}   
+
+.experiences{
+    height: 80vh;
+}   
+
+}
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
+
+.experiences{
+    height: calc(max-content + 100px);
+}   
+    
+.experiences::before{
+    top: 0;
+    right: -42vh;
+    transform: rotate(45deg);
+    width: 60vh;
+    height: 60vh;
+}
+.experiences::after{
+    font-size: 25vh;
+    transform: rotate(45deg);
+    top: 26vh;
+    right:-17vh;
+    width: 60vh;
+    height: 60vh;
+}
+.experiences:nth-child(odd)::before{
+    left: -42vh;
+}
+.experiences:nth-child(odd)::after{
+    left: -39vh;
+    top: -3vh;
+
+}
+
+.experiences .experiences-content{
+    width: calc(100vw - 45vh);
+    margin: 0 0 0 8vw;
+    height: calc(max-content + 100px);
+}
+.experiences .experiences-content-right{
+    align-items: flex-end;
+    margin: 0 0 0 40vh;
+}   
+
+.experiences .experiences-content .text{
+    font-size: 35px;
+}
+.experiences .experiences-content p{
+    font-size: 18px;
+}
+
+.experiences .experiences-content li{
+    font-size: 18px;
+}
 }
 
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
+
+    
+.experiences{
+    height: calc(max-content + 100px);
+}   
+    
+.experiences::before{
+    top: 0;
+    right: -28vh;
+    transform: rotate(45deg);
+    width: 40vh;
+    height: 40vh;
+}
+.experiences::after{
+    font-size: 17vh;
+    transform: rotate(45deg);
+    top: 17vh;
+    right:-11vh;
+    width: 40vh;
+    height: 40vh;
+}
+.experiences:nth-child(odd)::before{
+    left: -28vh;
+}
+.experiences:nth-child(odd)::after{
+    left: -26vh;
+    top: -2vh;
+
+}
+
+.experiences .experiences-content{
+    width: calc(100vw - 29vh);
+    margin: 0 0 0 8vw;
+    height: calc(max-content + 100px);
+}
+.experiences .experiences-content-right{
+    align-items: flex-end;
+    margin: 0 0 0 25vh;
+}   
+    
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -709,6 +933,70 @@ footer span a:hover{
     .projects .serv-content .card{
         width: 100%;
     }
+
+    .experience{
+        padding:0;
+        background-color: #000;
+    }
+    
+    .experiences{
+        overflow: visible;
+        height: max-content;
+        margin: 200px 0;
+    }
+    .experience .title::after{
+        font-size: 15px;
+    }
+    
+    .experiences::before{
+        top: -200px;
+        left: -200px;
+        transform: rotate(45deg);
+        width: 40vh;
+        height: 40vh;
+    }
+    .experiences::after{
+        font-size: 10vh;
+        transform: rotate(0deg);
+        top: -110px;
+        left:20px;
+        width: 40vh;
+        height: 115vh;
+    }
+    .experiences:nth-child(odd)::before{
+        top: -200px;
+        left: -40vw;
+    }
+    .experiences:nth-child(odd)::after{
+        top: -110px;
+        right:0;
+        text-align: end;
+    
+    }
+    
+    .experiences .experiences-content{
+        width: 90vw;
+        margin: 10vh 5vw;
+        height: max-content;
+    }
+    .experiences .experiences-content-right{
+        align-items: flex-start;
+        margin: 10vh 5vw;
+        width: 90vw;
+        height: calc(max-content + 10vh);
+    }   
+
+    .experiences .experiences-content ul{
+        width: 90vw;
+    }
+    
+    .experiences .experiences-content li{
+        width: 80vw;
+        margin: auto;
+    }
+       
+    
+    
 }
 
 @media (max-width: 500px) {
