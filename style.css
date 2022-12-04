@@ -728,17 +728,129 @@ footer span a:hover{
 
 
 /* responsive media query start */
+@media (max-width: 1275px) {
+    
+.experiences .experiences-content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: calc(100vw - 70vh);
+    margin: 0 0 0 10vh;
+    height: 90vh;
+    z-index: 2;
+}
+.experiences .experiences-content-right{
+    align-items: flex-end;
+    margin: 0 0 0 60vh;
+}   
+
+.experiences{
+    height: 80vh;
+}   
+
+}
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
+
+.experiences{
+    height: calc(max-content + 100px);
+}   
+    
+.experiences::before{
+    top: 0;
+    right: -42vh;
+    transform: rotate(45deg);
+    width: 60vh;
+    height: 60vh;
+}
+.experiences::after{
+    font-size: 25vh;
+    transform: rotate(45deg);
+    top: 26vh;
+    right:-17vh;
+    width: 60vh;
+    height: 60vh;
+}
+.experiences:nth-child(odd)::before{
+    left: -42vh;
+}
+.experiences:nth-child(odd)::after{
+    left: -39vh;
+    top: -3vh;
+
+}
+
+.experiences .experiences-content{
+    width: calc(100vw - 45vh);
+    margin: 0 0 0 8vw;
+    height: calc(max-content + 100px);
+}
+.experiences .experiences-content-right{
+    align-items: flex-end;
+    margin: 0 0 0 40vh;
+}   
+
+.experiences .experiences-content .text{
+    font-size: 35px;
+}
+.experiences .experiences-content p{
+    font-size: 18px;
+}
+
+.experiences .experiences-content li{
+    font-size: 18px;
+}
 }
 
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
     }
+
+    
+.experiences{
+    height: calc(max-content + 100px);
+}   
+    
+.experiences::before{
+    top: 0;
+    right: -28vh;
+    transform: rotate(45deg);
+    width: 40vh;
+    height: 40vh;
+}
+.experiences::after{
+    font-size: 17vh;
+    transform: rotate(45deg);
+    top: 17vh;
+    right:-11vh;
+    width: 40vh;
+    height: 40vh;
+}
+.experiences:nth-child(odd)::before{
+    left: -28vh;
+}
+.experiences:nth-child(odd)::after{
+    left: -26vh;
+    top: -2vh;
+
+}
+
+.experiences .experiences-content{
+    width: calc(100vw - 29vh);
+    margin: 0 0 0 8vw;
+    height: calc(max-content + 100px);
+}
+.experiences .experiences-content-right{
+    align-items: flex-end;
+    margin: 0 0 0 25vh;
+}   
+    
 }
 @media (max-width: 947px){
     .menu-btn{
@@ -821,6 +933,44 @@ footer span a:hover{
     .projects .serv-content .card{
         width: 100%;
     }
+
+    .experiences{
+        height: calc(max-content + 100px);
+    }   
+        
+    .experiences::before{
+        top: 0;
+        right: -28vh;
+        transform: rotate(45deg);
+        width: 40vh;
+        height: 40vh;
+    }
+    .experiences::after{
+        font-size: 17vh;
+        transform: rotate(45deg);
+        top: 17vh;
+        right:-11vh;
+        width: 40vh;
+        height: 40vh;
+    }
+    .experiences:nth-child(odd)::before{
+        right: -28vh;
+    }
+    .experiences:nth-child(odd)::after{
+        top: 17vh;
+        right:-11vh;
+    
+    }
+    
+    .experiences .experiences-content{
+        width: calc(100vw - 29vh);
+        margin: 0 0 0 8vw;
+        height: calc(max-content + 100px);
+    }
+    .experiences .experiences-content-right{
+        align-items: flex-end;
+        margin: 0 0 0 25vh;
+    }   
 }
 
 @media (max-width: 500px) {
