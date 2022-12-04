@@ -939,13 +939,21 @@ footer span a:hover{
         background-color: #000;
     }
     
+    .experience .title{
+        padding-bottom: 10vh;
+    }
+    
     .experiences{
         overflow: visible;
         height: max-content;
-        margin: 200px 0;
+        margin: 100px 0;
     }
     .experience .title::after{
         font-size: 15px;
+        bottom:7vh;
+    }
+    .experience .title::before{
+        bottom: 7.5vh;
     }
     
     .experiences::before{
@@ -960,17 +968,23 @@ footer span a:hover{
         transform: rotate(0deg);
         top: -110px;
         left:15px;
-        width: 40vh;
-        height: 115vh;
+        width: 30vh;
+        height: 30vh;
     }
     .experiences:nth-child(odd)::before{
         top: -50px;
         left: -150px;
+        width: 30vh;
+        height: 30vh;
     }
     .experiences:nth-child(odd)::after{
-        top: -100px;
-        left: -170px;
+        
+        font-size: 150px;
+        top: -110px;
+        left: -80px;
         text-align: end;
+        width: 30vh;
+        height: 30vh;
     
     }
     
