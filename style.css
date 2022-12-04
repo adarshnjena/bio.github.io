@@ -949,27 +949,27 @@ footer span a:hover{
     }
     
     .experiences::before{
-        top: -200px;
-        left: -200px;
+        top: -50px;
+        left: -150px;
         transform: rotate(45deg);
-        width: 40vh;
-        height: 40vh;
+        width: 30vh;
+        height: 30vh;
     }
     .experiences::after{
-        font-size: 10vh;
+        font-size: 150px;
         transform: rotate(0deg);
         top: -110px;
-        left:20px;
+        left:15px;
         width: 40vh;
         height: 115vh;
     }
     .experiences:nth-child(odd)::before{
-        top: -200px;
-        left: -40vw;
+        top: -50px;
+        left: -150px;
     }
     .experiences:nth-child(odd)::after{
-        top: -110px;
-        right:0;
+        top: -100px;
+        left: -170px;
         text-align: end;
     
     }
