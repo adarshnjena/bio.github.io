@@ -1,6 +1,9 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-@import url('https://allfont.net/allfont.css?fonts=franklin-gothic-medium');
+@font-face {
+    font-family: 'Franklin Gothic Medium';
+    src: url(/franklin-gothic-medium.ttf) format('truetype');
+}
 
 *{
     margin: 0;
@@ -292,7 +295,7 @@ section .title::after{
     content: "01";
     font-size: 30vh;
     color: #fff;
-    font-family: 'Franklin Gothic Medium', arial;
+    font-family:'Franklin Gothic Medium';
     position: absolute;
     transform: rotate(45deg);
     top: 50vh;
