@@ -934,43 +934,69 @@ footer span a:hover{
         width: 100%;
     }
 
+    .experience{
+        padding:0;
+        background-color: #000;
+    }
+    
     .experiences{
-        height: calc(max-content + 100px);
-    }   
-        
+        overflow: visible;
+        height: max-content;
+        margin: 200px 0;
+    }
+    .experience .title::after{
+        font-size: 15px;
+    }
+    
     .experiences::before{
-        top: 0;
-        right: -28vh;
+        top: -200px;
+        left: -200px;
         transform: rotate(45deg);
         width: 40vh;
         height: 40vh;
     }
     .experiences::after{
-        font-size: 17vh;
-        transform: rotate(45deg);
-        top: 17vh;
-        right:-11vh;
+        font-size: 10vh;
+        transform: rotate(0deg);
+        top: -110px;
+        left:20px;
         width: 40vh;
-        height: 40vh;
+        height: 115vh;
     }
     .experiences:nth-child(odd)::before{
-        right: -28vh;
+        top: -200px;
+        left: -40vw;
     }
     .experiences:nth-child(odd)::after{
-        top: 17vh;
-        right:-11vh;
+        top: -110px;
+        right:0;
+        text-align: end;
     
     }
     
     .experiences .experiences-content{
-        width: calc(100vw - 29vh);
-        margin: 0 0 0 8vw;
-        height: calc(max-content + 100px);
+        width: 90vw;
+        margin: 10vh 5vw;
+        height: max-content;
     }
     .experiences .experiences-content-right{
-        align-items: flex-end;
-        margin: 0 0 0 25vh;
+        align-items: flex-start;
+        margin: 10vh 5vw;
+        width: 90vw;
+        height: calc(max-content + 10vh);
     }   
+
+    .experiences .experiences-content ul{
+        width: 90vw;
+    }
+    
+    .experiences .experiences-content li{
+        width: 80vw;
+        margin: auto;
+    }
+       
+    
+    
 }
 
 @media (max-width: 500px) {
