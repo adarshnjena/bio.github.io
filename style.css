@@ -15,7 +15,7 @@ html{
     scroll-behavior: smooth;
 }
 :root {
-    --first-color: #ffc000;
+    --first-color: #F2C747;
     --second-color: white;
   }
 
@@ -276,7 +276,7 @@ section .title::after{
 
 .typing-2{
     color: white;
-    text-decoration: underline #ffc000;
+    text-decoration: underline #F2C747;
 }
 
 .experience .title::after{
